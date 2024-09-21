@@ -47,6 +47,11 @@ function submit_form (){
     phoneShow.innerHTML = `
      ${statevaluearr[0]}`
 
+
+     if(namevaluearr[1] === undefined){
+      nameShow1.innerHTML = `
+      ${hello}`
+    }
     // SECOND ROW DATA
     
     var nameShow2 = document.getElementById("forname2");
@@ -54,8 +59,8 @@ function submit_form (){
     var emailShow2 = document.getElementById("foremail2");
     var adressShow2 = document.getElementById("foradress2");
     var phoneShow2 = document.getElementById("forphone2");
-
-   nameShow2.innerHTML = `
+    
+    nameShow2.innerHTML = `
     ${namevaluearr[1]}`
 
     passShow2.innerHTML = `
@@ -66,11 +71,15 @@ function submit_form (){
 
     adressShow2.innerHTML = `
     ${adressvaluearr[1]}`
-
+    
     phoneShow2.innerHTML = `
-   ${statevaluearr[1]}`
-  
-
+    ${statevaluearr[1]}`
+    
+    
+    if(namevaluearr[2] === undefined){
+      nameShow2.innerHTML = `
+      ${hello}`
+    }
   
     // THIRD ROW DATA
 
@@ -95,6 +104,11 @@ function submit_form (){
      phoneShow3.innerHTML = `
     ${statevaluearr[2]}`
 
+
+    if(namevaluearr[3] === undefined){
+      nameShow3.innerHTML = `
+      ${hello}`
+    }
     // FOURTH ROW DATA
 
     var nameShow4 = document.getElementById("forname4");
